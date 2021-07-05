@@ -52,7 +52,7 @@ export default {
     const movie = ref({});
     onMounted(() => {
       if (route.params.imdbId !== '') {
-        fetch(`http://www.omdbapi.com/?apikey=1314d8b1&i=${route.params.imdbId}`)
+        fetch(`https://www.omdbapi.com/?apikey=1314d8b1&i=${route.params.imdbId}`)
         .then(response => response.json())
         .then(data => {
           movie.value = data;
