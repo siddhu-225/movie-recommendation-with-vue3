@@ -48,7 +48,6 @@ export default {
         fetch(`http://www.omdbapi.com/?apikey=1314d8b1&s=${search.value}`)
         .then(response => response.json())
         .then(data => {
-          console.log('data----------', data);
           movieDetails.value = data.Search;
           search.value = "";
         });
@@ -66,7 +65,6 @@ export default {
           imdbId: movie.imdbID,
         }
       });
-      // showDetailsActive.value = true;
     }
     return {
       search,

@@ -51,7 +51,6 @@ export default {
     const route = useRoute();
     const movie = ref({});
     onMounted(() => {
-      console.log("Mounted!");
       if (route.params.imdbId !== '') {
         fetch(`http://www.omdbapi.com/?apikey=1314d8b1&i=${route.params.imdbId}`)
         .then(response => response.json())
