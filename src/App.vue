@@ -1,7 +1,4 @@
 <template>
-  <div id="nav">
-    <router-link to="/"><span class="title is-1">Movie Recommendation</span></router-link>
-  </div>
   <router-view/>
 </template>
 
